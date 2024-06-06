@@ -21,7 +21,7 @@ class FollowerListVC: UIViewController {
             }
             if let error = error{
                 print(error)
-                self.presentGFAlert(title: "Error", message: error, butttonTitle: "Or")
+                self.presentGFAlert(title: "Error", message: error.rawValue, butttonTitle: "Ok")
             }
         }
     }

@@ -20,6 +20,7 @@
 		0B8CCE352C120270000D82A0 /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8CCE342C120270000D82A0 /* Follower.swift */; };
 		0B8CCE372C120384000D82A0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8CCE362C120384000D82A0 /* User.swift */; };
 		0B8CCE3A2C120534000D82A0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8CCE392C120534000D82A0 /* NetworkManager.swift */; };
+		0B8CCE3E2C1211B3000D82A0 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8CCE3D2C1211B3000D82A0 /* ErrorMessage.swift */; };
 		0BA7FD912C10C1DD0073E19B /* FollowerListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA7FD902C10C1DD0073E19B /* FollowerListVC.swift */; };
 		0BA7FD932C10CA210073E19B /* GFTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA7FD922C10CA210073E19B /* GFTitleLabel.swift */; };
 		0BA7FD952C10CBAB0073E19B /* GFBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA7FD942C10CBAB0073E19B /* GFBodyLabel.swift */; };
@@ -42,6 +43,7 @@
 		0B8CCE342C120270000D82A0 /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
 		0B8CCE362C120384000D82A0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0B8CCE392C120534000D82A0 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		0B8CCE3D2C1211B3000D82A0 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		0BA7FD902C10C1DD0073E19B /* FollowerListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListVC.swift; sourceTree = "<group>"; };
 		0BA7FD922C10CA210073E19B /* GFTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTitleLabel.swift; sourceTree = "<group>"; };
 		0BA7FD942C10CBAB0073E19B /* GFBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFBodyLabel.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 		0B0346192C0F5AF20047300A /* Github Follower UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				0B8CCE3B2C121103000D82A0 /* Utilities */,
 				0B8CCE382C120522000D82A0 /* Managers */,
 				0B8CCE332C120261000D82A0 /* Model */,
 				0B8CCE322C1201F8000D82A0 /* Support */,
@@ -104,6 +107,7 @@
 		0B8CCE302C11FDE3000D82A0 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				0B0346322C0F66870047300A /* GFButton.swift */,
 				0BA7FD962C10CC770073E19B /* GFAlertVC.swift */,
 				0B0346342C0F69F30047300A /* GFTextField.swift */,
 				0BA7FD922C10CA210073E19B /* GFTitleLabel.swift */,
@@ -125,7 +129,6 @@
 			children = (
 				0B03461A2C0F5AF20047300A /* AppDelegate.swift */,
 				0B03461C2C0F5AF20047300A /* SceneDelegate.swift */,
-				0B0346322C0F66870047300A /* GFButton.swift */,
 				0B03461E2C0F5AF20047300A /* ViewController.swift */,
 				0B0346232C0F5AF30047300A /* Assets.xcassets */,
 				0B0346252C0F5AF30047300A /* LaunchScreen.storyboard */,
@@ -148,6 +151,14 @@
 				0B8CCE392C120534000D82A0 /* NetworkManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		0B8CCE3B2C121103000D82A0 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				0B8CCE3D2C1211B3000D82A0 /* ErrorMessage.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +249,7 @@
 				0B03461D2C0F5AF20047300A /* SceneDelegate.swift in Sources */,
 				0BA7FD932C10CA210073E19B /* GFTitleLabel.swift in Sources */,
 				0B0346352C0F69F30047300A /* GFTextField.swift in Sources */,
+				0B8CCE3E2C1211B3000D82A0 /* ErrorMessage.swift in Sources */,
 				0B8CCE3A2C120534000D82A0 /* NetworkManager.swift in Sources */,
 				0BA7FD912C10C1DD0073E19B /* FollowerListVC.swift in Sources */,
 				0BA7FD952C10CBAB0073E19B /* GFBodyLabel.swift in Sources */,

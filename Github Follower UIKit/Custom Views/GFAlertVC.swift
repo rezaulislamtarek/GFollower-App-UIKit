@@ -54,7 +54,7 @@ class GFAlertVC: UIViewController {
             make.centerX.equalToSuperview()
             make.centerY.equalToSuperview()
             make.leading.equalToSuperview().offset(32)
-            make.height.equalTo(250)
+            make.height.equalTo(200)
         }
     }
     
@@ -101,5 +101,5 @@ class GFAlertVC: UIViewController {
 
 
 #Preview{
-    GFAlertVC(alertTitle: "Alert title", message: "Alert message should be show here.Alert message should be show here.Alert message should be show here." )
+    GFAlertVC(alertTitle: "Alert title", message: "Alert message should be show here.Alert message should be show here." )
 }
