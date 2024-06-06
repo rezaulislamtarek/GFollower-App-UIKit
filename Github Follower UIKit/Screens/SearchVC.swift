@@ -56,17 +56,6 @@ class SearchVC: UIViewController {
         navigationController?.pushViewController(followerListVC, animated: true)
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 
      
     private func configureLogoImageView(){

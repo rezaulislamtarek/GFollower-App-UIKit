@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class GFAlertVCViewController: UIViewController {
+class GFAlertVC: UIViewController {
 
     let containerView = UIView()
     let titleLabel = GFTitleLabel(textAlignment: .center, fontSize: 20)
@@ -101,5 +101,5 @@ class GFAlertVCViewController: UIViewController {
 
 
 #Preview{
-    GFAlertVCViewController(alertTitle: "Alert title", message: "Alert message should be show here.Alert message should be show here.Alert message should be show here." )
+    GFAlertVC(alertTitle: "Alert title", message: "Alert message should be show here.Alert message should be show here.Alert message should be show here." )
 }
