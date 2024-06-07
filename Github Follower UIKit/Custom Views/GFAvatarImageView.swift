@@ -9,7 +9,7 @@ import UIKit
 
 class GFAvatarImageView: UIImageView {
     
-    let placeholderImage = UIImage(named: "github_logo")
+    let placeholderImage = UIImage(systemName: "person")
 
     override init(frame: CGRect) {
         super.init(frame: frame)

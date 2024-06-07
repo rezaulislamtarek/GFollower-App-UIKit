@@ -16,6 +16,7 @@ class SearchVC: UIViewController {
     let callToActionButton = GFButton(backgroundColor: .systemGreen, title: "Get Followers")
 
     var isUserNameEntered : Bool {
+        usernameTF.text = "SAllen0400"
         return !usernameTF.text!.isEmpty
     }
     
@@ -47,6 +48,7 @@ class SearchVC: UIViewController {
     
     
     @objc func pushFollowerListVC(){
+        
         guard isUserNameEntered else {
             presentGFAlert(title: "Empty username", message: "Please enter username. We need to know your name to procede 😎", butttonTitle: "Ok")
             return }

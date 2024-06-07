@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class FollowerCellCollectionViewCell: UICollectionViewCell {
+class FollowerCell: UICollectionViewCell {
     static let reuseID = "FollowerCell"
     
     let avatarImageView = GFAvatarImageView(frame: .zero)
@@ -31,15 +31,17 @@ class FollowerCellCollectionViewCell: UICollectionViewCell {
     private func configure(){
         configAvatar()
         configLabel()
+        translatesAutoresizingMaskIntoConstraints = false
     }
     
     private func configAvatar(){
         addSubview(avatarImageView)
         
         avatarImageView.snp.makeConstraints { make in
-            make.top.equalToSuperview()
+            make.top.equalToSuperview().offset(16)
             make.centerX.equalToSuperview()
-            make.height.equalTo(avatarImageView.snp.width)
+            make.height.equalTo(70)
+            make.width.equalTo(70)
         }
     }
     
@@ -47,9 +49,9 @@ class FollowerCellCollectionViewCell: UICollectionViewCell {
         addSubview(userNameLabel)
         
         userNameLabel.snp.makeConstraints { make in
-            make.top.equalTo(avatarImageView.snp.bottom).offset(8)
-            make.centerX.equalToSuperview()
-            make.height.equalTo(20)
+            make.top.equalTo(avatarImageView.snp.bottom).offset(16)
+            make.leading.equalTo(avatarImageView.snp.leading)
+            make.trailing.equalTo(avatarImageView.snp.trailing)
         }
     }
 }
