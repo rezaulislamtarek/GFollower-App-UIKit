@@ -16,7 +16,7 @@ class SearchVC: UIViewController {
     let callToActionButton = GFButton(backgroundColor: .systemGreen, title: "Get Followers")
 
     var isUserNameEntered : Bool {
-        usernameTF.text = "SAllen0400"
+        //usernameTF.text = "SAllen0400"
         return !usernameTF.text!.isEmpty
     }
     
