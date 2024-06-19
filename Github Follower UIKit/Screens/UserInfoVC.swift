@@ -11,6 +11,7 @@ class UserInfoVC: UIViewController {
     let headerView = UIView()
     let itemViewOne = UIView()
     let itemViewTwo = UIView()
+    let dateLabel = GFBodyLabel(textAlignment: .center)
     var userName : String!
     
 
@@ -27,6 +28,7 @@ class UserInfoVC: UIViewController {
         configHeaderView()
         configViewOne()
         configViewTwo()
+        configDateLabel()
     }
     
     private func configHeaderView(){
@@ -68,9 +70,17 @@ class UserInfoVC: UIViewController {
             make.right.equalToSuperview().inset(16)
             make.height.equalTo(160)
         }
-      
-        
     }
+    
+    private func configDateLabel(){
+        view.addSubview(dateLabel)
+        
+        dateLabel.snp.makeConstraints { make in
+            make.top.equalTo(itemViewTwo.snp.bottom)
+            make.centerX.equalToSuperview()
+        }
+    }
+
     
     @objc func dismissVC(){
         dismiss(animated: true)
@@ -85,6 +95,7 @@ class UserInfoVC: UIViewController {
                     self.add(childVC: GFUserInfoHeaderVC(user: user), to: self.headerView)
                     self.add(childVC: GFRepoItemVC(user: user), to: self.itemViewOne)
                     self.add(childVC: GFFollowerItemVC(user: user), to: self.itemViewTwo)
+                    self.dateLabel.text = "GitHub since \(user.createdAt.convertToDisplayFormate())"
                 }
             case .failure(let error):
                 print(error.localizedDescription)
